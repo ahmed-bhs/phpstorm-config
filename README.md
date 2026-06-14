@@ -56,13 +56,14 @@ reliably). For each new project:
 
 ```xml
 <component name="FileColors">
-  <fileColor scope="Domain" color="5c960e" />
-  <fileColor scope="Application" color="d36e9e" />
-  <fileColor scope="Infrastructure" color="0f81c1" />
+  <fileColor scope="Domain" color="2d4a26" />
+  <fileColor scope="Application" color="332430" />
+  <fileColor scope="Infrastructure" color="243038" />
 </component>
 ```
 
-`Domain` files are green (`#5c960e`), `Application` files are rose
-(`#d36e9e`), `Infrastructure` files are blue (`#0f81c1`). Custom hex colors
-are passed as 6-digit hex without `#`.
+`Domain` files are dark green (`#2d4a26`), `Application` files are dark rose
+(`#332430`), `Infrastructure` files are dark blue (`#243038`). These muted
+shades keep white tree text readable. Custom hex colors are passed as
+6-digit hex without `#`.
 Restart PhpStorm after adding the scopes file.
