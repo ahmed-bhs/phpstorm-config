@@ -12,4 +12,5 @@
   <scope name="Domain ValueObject" pattern="file:src//*/Domain/ValueObject//*" />
   <scope name="Domain Event" pattern="file:src//*/Domain/Event//*" />
   <scope name="Shared Module" pattern="file:src/Shared//*" />
+  <scope name="Bounded Context Modules" pattern="file:src//*//* &amp;&amp; !file:src/Shared//*" />
 </component>
