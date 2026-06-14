@@ -29,19 +29,21 @@ layers, editor/php settings.
 - `fileTemplates/code/` — "New File" templates for hexagonal building blocks:
   Command, Command Handler, Query, Query Handler, Domain Entity, Value Object,
   Port Out interface. Each asks for `MODULE` and `NAME`.
-- `options/scopes/scopes.xml` — named scopes matching `src/{Module}/{Layer}/...`
-  convention (Domain, Application, Infrastructure, Port Out, Port In (Bus),
-  Adapter In/Out, UseCase Command/Query, etc). Used for File Colors and
-  navigation filters.
 - `options/editor.xml` — strip trailing whitespace, ensure final newline,
   reformat on paste.
 - `options/php.xml` — PHP smart keys settings.
+- `idea-template/scopes/Hexagonal_Architecture.xml` — named scopes matching
+  `src/{Module}/{Layer}/...` convention (Domain, Application, Infrastructure,
+  Port Out, Port In (Bus), Adapter In/Out, UseCase Command/Query, etc).
 
-## Per-project File Colors
+## Per-project setup (scopes + File Colors)
 
-File Colors (the colored editor tabs/file tree rows per scope) are stored per
-project in `.idea/workspace.xml`. To enable them in a new project, add to its
-`.idea/workspace.xml`:
+Scopes must be defined per-project (global scopes file did not get picked up
+reliably). For each new project:
+
+1. Copy `idea-template/scopes/Hexagonal_Architecture.xml` into the project's
+   `.idea/scopes/` directory.
+2. Add to the project's `.idea/workspace.xml`:
 
 ```xml
 <component name="FileColors">
@@ -52,6 +54,4 @@ project in `.idea/workspace.xml`. To enable them in a new project, add to its
 
 `Domain` files are green (`#5c960e`), `Infrastructure` files are blue
 (`#0f81c1`). Custom hex colors are passed as 6-digit hex without `#`.
-
-This requires the scopes from `options/scopes/scopes.xml` to be installed
-globally first (step 3 above).
+Restart PhpStorm after adding the scopes file.
