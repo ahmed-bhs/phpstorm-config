@@ -45,15 +45,18 @@ project in `.idea/workspace.xml`. To enable them in a new project, add to its
 
 ```xml
 <component name="FileColors">
-  <scopeBasedColorRules>
-    <colorRule scope="Port Out" color="VIOLET" />
-    <colorRule scope="Port In (Bus)" color="YELLOW" />
-    <colorRule scope="Domain" color="GREEN" />
-    <colorRule scope="Application" color="BLUE" />
-    <colorRule scope="Infrastructure" color="ROSE" />
-  </scopeBasedColorRules>
+  <fileColor scope="Port Out" color="VIOLET" />
+  <fileColor scope="Port In (Bus)" color="YELLOW" />
+  <fileColor scope="Shared Module" color="ROSE" />
+  <fileColor scope="Domain" color="GREEN" />
+  <fileColor scope="Application" color="BLUE" />
+  <fileColor scope="Infrastructure" color="GRAY" />
 </component>
 ```
+
+Order matters: more specific scopes (Port Out/In, Shared Module) must come
+before the broader layer scopes (Domain/Application/Infrastructure) so they
+take priority for files that match both.
 
 This requires the scopes from `options/scopes/scopes.xml` to be installed
 globally first (step 3 above).
