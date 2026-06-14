@@ -36,6 +36,15 @@ layers, editor/php settings.
   `src/{Module}/{Layer}/...` convention (Domain, Application, Infrastructure,
   Port Out, Port In (Bus), Adapter In/Out, UseCase Command/Query, etc).
 
+## Project tree order: Infrastructure / Application / Domain
+
+PhpStorm sorts folders alphabetically with no native override. The
+`plugin-hex-order/` directory contains an IntelliJ plugin that forces
+`Infrastructure`, `Application`, `Domain` to appear in that order in the
+Project tree. Build with `./gradlew buildPlugin` inside `plugin-hex-order/`
+and install the resulting zip via Settings > Plugins > Install from Disk.
+See `plugin-hex-order/README.md`.
+
 ## Per-project setup (scopes + File Colors)
 
 Scopes must be defined per-project (global scopes file did not get picked up
