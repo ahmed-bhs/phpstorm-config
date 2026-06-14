@@ -45,15 +45,13 @@ project in `.idea/workspace.xml`. To enable them in a new project, add to its
 
 ```xml
 <component name="FileColors">
-  <fileColor scope="Shared Module" color="ROSE" />
-  <fileColor scope="Bounded Context Modules" color="BLUE" />
+  <fileColor scope="Domain" color="5c960e" />
+  <fileColor scope="Infrastructure" color="0f81c1" />
 </component>
 ```
 
-`Shared Module` (`src/Shared/...`) is rose, every other bounded context
-module (`src/{Module}/...`) shares the same blue. `Shared Module` must come
-first so it takes priority over `Bounded Context Modules` for files under
-`src/Shared/`.
+`Domain` files are green (`#5c960e`), `Infrastructure` files are blue
+(`#0f81c1`). Custom hex colors are passed as 6-digit hex without `#`.
 
 This requires the scopes from `options/scopes/scopes.xml` to be installed
 globally first (step 3 above).
