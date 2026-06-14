@@ -48,10 +48,12 @@ reliably). For each new project:
 ```xml
 <component name="FileColors">
   <fileColor scope="Domain" color="5c960e" />
+  <fileColor scope="Application" color="d36e9e" />
   <fileColor scope="Infrastructure" color="0f81c1" />
 </component>
 ```
 
-`Domain` files are green (`#5c960e`), `Infrastructure` files are blue
-(`#0f81c1`). Custom hex colors are passed as 6-digit hex without `#`.
+`Domain` files are green (`#5c960e`), `Application` files are rose
+(`#d36e9e`), `Infrastructure` files are blue (`#0f81c1`). Custom hex colors
+are passed as 6-digit hex without `#`.
 Restart PhpStorm after adding the scopes file.
