@@ -1,0 +1,21 @@
+# Marketplace plugins to install via Settings > Plugins > Marketplace
+# (search by name and install)
+
+AI Commits
+CodeGlance Pro
+Codebuddy
+Continue
+GitHub Copilot
+Key Promoter X
+GitToolBox
+Extra Icons
+Atom Material Icons
+Indent Rainbow
+Rainbow CSV
+WakaTime
+Monokai Pro Theme
+ANSI Highlighter
+Full Line Code Completion
+Non-Project Files Unlocker
+Neon
+Emmet Everywhere

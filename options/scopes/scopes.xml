@@ -1,0 +1,15 @@
+<component name="DependencyValidationManager">
+  <scope name="Domain" pattern="file:src//*/Domain//*" />
+  <scope name="Application" pattern="file:src//*/Application//*" />
+  <scope name="Infrastructure" pattern="file:src//*/Infrastructure//*" />
+  <scope name="Port Out" pattern="file:src//*//Port/Out//*" />
+  <scope name="Port In (Bus)" pattern="file:src/Shared/Application/Port/In//*" />
+  <scope name="Adapter In (driving)" pattern="file:src//*/Infrastructure/Adapter/In//*" />
+  <scope name="Adapter Out (driven)" pattern="file:src//*/Infrastructure/Adapter/Out//*" />
+  <scope name="UseCase Command" pattern="file:src//*/Application/UseCase/Command//*" />
+  <scope name="UseCase Query" pattern="file:src//*/Application/UseCase/Query//*" />
+  <scope name="Domain Entity" pattern="file:src//*/Domain/Entity//*" />
+  <scope name="Domain ValueObject" pattern="file:src//*/Domain/ValueObject//*" />
+  <scope name="Domain Event" pattern="file:src//*/Domain/Event//*" />
+  <scope name="Shared Module" pattern="file:src/Shared//*" />
+</component>
