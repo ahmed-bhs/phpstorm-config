@@ -1,0 +1,12 @@
+<idea-plugin>
+    <id>com.ahmedbhs.hexlayerorder</id>
+    <name>Hex Layer Order</name>
+    <vendor>ahmed-bhs</vendor>
+    <description>Orders Infrastructure / Application / Domain folders in the Project view for hexagonal architecture modules.</description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <treeStructureProvider implementation="com.ahmedbhs.hexorder.HexLayerTreeStructureProvider"/>
+    </extensions>
+</idea-plugin>
